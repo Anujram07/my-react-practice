@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 99, 71, 0.95); /* semi-transparent tomato */
+  color: white;
+  padding: 8px 16px;   /* smaller height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.navbar h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navbar nav button {
+  margin: 0 4px;
+  background: white;
+  color: #ff6347;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.navbar nav button:hover {
+  background: #ffe0d6;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  padding-top: 70px; /* space for navbar */
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.type {
+  font-style: italic;
+  color: #555;
+}
+
+/* Card buttons */
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.card-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.card-buttons button:first-child {
+  background: #dc3545;
+  color: white;
+}
+
+.card-buttons button:last-child {
+  background: #28a745;
+  color: white;
+}
+
+.card-buttons button:hover {
+  opacity: 0.85;
+}

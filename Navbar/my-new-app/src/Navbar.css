@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    background-color: pink;
+    color: blue;
+    height: 40px;
+    width: 100%;
+    font-size: 27px;
+   justify-content: space-between;
+   /* overflow: hidden; */
+   text-align: center;
+   
+    
+}
